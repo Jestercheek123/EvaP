@@ -8,7 +8,7 @@
 - A **student**/*Student* is a person enrolled in a course.
 - Students who are taking part in the evaluation by answering questionnaires are called **participants**/*Teilnehmer*.
 - Any person using the system at any time is called a **user**/*Benutzer*.
-- Users without Kerberos credentials need a **login key*/*Anmeldeschlüssel* to log in.
+- Users without Kerberos credentials need a **login key**/*Anmeldeschlüssel* to log in.
 
 ### Courses
 (Note: we didn't choose "class" because it's a keyword in python)
