@@ -1,19 +1,18 @@
-### Was ist EvaP?
+### What is EvaP?
 
-EvaP ermöglicht die Evaluierung (=Beurteilung) von Lehrveranstaltungen an Universitäten. Ziel ist es, die Qualität der Lehre zu verbessern, indem die Dozenten und die Universitätsleitung Feedback zu den einzelnen Veranstaltungen erhalten.
+EvaP is an Online Platform being used for evaluation of University Courses. It aims at helping to improve the quality of teaching by providing feedback on courses to Lecturers and University Management.
 
-Die Studenten können mittels eines Online-Systems anonym Fragebögen für ihre belegten Lehrveranstaltungen ausfüllen. Nach ihrer Veröffentlichung sind die Evaluierungsergebnisse den Studenten, Dozenten und der Universitätsleitung durch das Evaluierungssystem zugänglich.
+Students are provided with a Website to anonymously complete Questionnaires for the courses in which they are enrolled. After publishing the aggregated results of the Questionnaires are accessible for Students, Lecturers and University Management on the same Platform.
 
-EvaP ist der Nachfolger von EvaJ, welches unwartbar geworden ist und zum WS 2011/12 abgeschaltet wurde.
+EvaP was developed at the Hasso Plattner Institute (HPI) in Potsdam, Germany, where it replaced the former used EvaJ in 2011, which became unmaintainable.
 
-### Ziel dieses Wikis
+### What is this Wiki for?
 
-Dieses Wiki beschreibt möglichst vollständig den Evaluierungsprozess, die Funktionalität der Evaluierungsplattform, sowie die Gründe für Entscheidungen an bestimmten Prozessdetails. Es enthält somit alle wichtigen Informationen für den jeweils amtierenden Fachschaftsrat bzw. interessierte Personen, die die Evaluierungsplattform weiterentwickeln wollen.
+As completely as possible this Wiki describes the Evaluation Process itself, the functionality of the Evaluation Platform and reasons for design decisions. It contains all important information for the administrating Student Representatives and for everyone who is interested in taking part in the Platform's development.
 
-Dieses Wiki ist kein User Manual, beschreibt teilweise jedoch relevantes Hintergrundwissen zu den Evaluierungs-Konzepten, um mit dem Portal arbeiten zu können. Zum besseren Nachschlagen wird es zusätzlich noch eine Schritt-für-Schritt-Anleitung und FAQs passend für die Nutzergruppen (Studenten, Dozenten, Fachschaftsrat) geben.
+This is not a User Manual, but it provides some background knowledge about the concepts used within the project. A Step-by-Step Manual and an FAQ section for the different types of users (Students, Lecturers, Student Representatives) will be added later on.
 
 ### Table of Contents
 
 [[Terminology]]
-
 [[Domain Description]]
