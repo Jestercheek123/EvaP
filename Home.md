@@ -15,4 +15,5 @@ This is not a User Manual, but it provides some background knowledge about the c
 ### Table of Contents
 
 [[Terminology]]
+
 [[Domain Description]]
