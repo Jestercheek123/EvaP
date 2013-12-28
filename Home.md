@@ -17,3 +17,5 @@ This is not a user manual, but it provides some background knowledge about the c
 [[Terminology]]
 
 [[Domain Description]]
+
+[[Users and their Rights]]
