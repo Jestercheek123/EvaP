@@ -13,7 +13,7 @@
 ## Evaluation
 
 1. When all preparations are done, the FSR can "enable the course for lecturer review". This will send the "Lecturer Review Notice" email to the responsible person. If possible, do this with all courses at once, so the responsibles will get only one email. The new state is **pending for lecturer approval**.
-1. The responsible person can now adjust the evaluation period and the selection of questionnaires and add contributors. When he approves the course, it is in the state **approved by lecturer**.
+1. The responsible person can now adjust the evaluation period and the selection of questionnaires, modify the participant list and add contributors. When he approves the course, it is in the state **approved by lecturer**.
 1. The FSR can check if the responsible person did everything right and approve the course as well, the course is then **approved by FSR**.
 1. (Automatically) When the evaluation period starts, the course will be switched to the state **in evaluation**. This is done by a [management command](../blob/master/evap/fsr/management/commands/run_tasks.py), which is executed by a [cron job](../blob/master/docs/installation.rst#productive-environment-cron-configuration).
 1. (Automatically) A fixed time before the evaluation period ends, the system will send the "Student Reminder" email to all participants who did not evaluate one of their courses yet.
