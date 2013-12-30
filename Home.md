@@ -23,3 +23,7 @@ This is not a user manual, but it provides some background knowledge about the c
 [[Evaluation Process]]
 
 [[User Management]]
+
+[[Questionnaires: Structure]]
+
+[[Questionnaires: Assignment]]
