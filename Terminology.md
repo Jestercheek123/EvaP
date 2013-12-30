@@ -6,7 +6,8 @@
 - Every contributor can get assigned **edit rights**/*Bearbeitungsrechte* for a course by any person who already has these edit rights for this very course. The responsible person always has edit rights.
 - **Delegates**/*Stellvertreter* are people who are assigned to other people. A delegate has the combined edit rights for courses of all people he or she is **representing**.
 - A **student**/*Student* is a person enrolled in a course.
-- Students who are taking part in the evaluation by answering questionnaires are called **participants**/*Teilnehmer*.
+- Students who are enrolled in a course are called **participants**/*Teilnehmer* of that course.
+- Students who took part in the evaluation of a course are called **voters**/*Abstimmende*.
 - Any person using the system at any time is called a **user**/*Benutzer*.
 - Users without Kerberos credentials need a **login key**/*Anmeldeschlüssel* to log in.
 
