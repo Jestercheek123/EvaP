@@ -1,4 +1,3 @@
-
 ### Berechnung der Gesamtnote und der Teilnoten
 
 Eine Teilnote wird aus dem Durchschnitt aller für diese Frage abgegebenen Stimmen berechnet.
