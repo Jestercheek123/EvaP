@@ -16,8 +16,8 @@ Mitglieder des Fachschaftsrates haben zu Zensurzwecken die Möglichkeit alle Kom
 
 Zum Ausdruck bietet EvaP einen Excel-Export, welcher alle veröffentlichten Noten-Ergebnisse tabellarisch darstellt. 
 
-Enthalten sind für alle Likert-Fragen die Durchschnittsnoten und die Standardabweichung. Nicht veröffentlicht sind hier die Kommentare. Im Studenten-Export finden sich nur Frageergebnisse mit ausreichender Repräsentativität (siehe unten) (TODO verify). Im GF-Export sind alle Ergebnisse vorhanden.
-Die Ergebnisse von Personenfragen werden pro Frage zusammengefasst, d.h. alle Antworten zu Übungsleitern gehen in ein Ergebnis, die Antworten zu Dozenten jeweils ebenso. Siehe auch Abschnitt zu Gesamtnote. (TODO: Verify)
+Enthalten sind für alle Likert-Fragen die Durchschnittsnoten und die Standardabweichung. Nicht veröffentlicht sind hier die Kommentare. Im Studenten-Export finden sich nur Frageergebnisse mit ausreichender Repräsentativität (siehe unten). Im GF-Export sind alle Ergebnisse vorhanden.
+Die Ergebnisse von Personenfragen werden pro Frage zusammengefasst, d.h. alle Antworten zu Übungsleitern gehen in ein Ergebnis, die Antworten zu Dozenten jeweils ebenso. Siehe auch Abschnitt zu Gesamtnote.
 
 ### Wer darf was sehen
 
@@ -28,7 +28,7 @@ Anmerkungen:
 
 Form                  | allgemeiner Nutzer | Verantwortlicher | Mitwirkender | Export  | GF-Export | FSR
 ----------------------|--------------------|------------------|--------------|---------|-----------|----
-#Belegungen, #Antworten, Gesamtnote | ja   | ja               | ja           | nur Gesamtnote und # abgegebener Fragebögen (TODO) | siehe "Export" | ja
+#Belegungen, #Antworten, Gesamtnote | ja   | ja               | ja           | nur Gesamtnote und # abgegebener Fragebögen | siehe "Export" | ja
 Antworten auf Likertfragen     | ja, 20%   | ja               | ja           | ja, 20% | ja        | ja
 Kommentare - Sachfragebögen    | nein      | ja               | ja           | nein    | nein      | ja
 Kommentare - Personenfragebögen aller Mitwirkenden | nein | ja| nein         | nein    | nein      | ja
