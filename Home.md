@@ -27,3 +27,5 @@ This is not a user manual, but it provides some background knowledge about the c
 [[Questionnaires: Structure]]
 
 [[Questionnaires: Assignment]]
+
+[[Publishing Results]]
