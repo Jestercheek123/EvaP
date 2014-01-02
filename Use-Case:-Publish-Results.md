@@ -33,7 +33,7 @@
 | 4 | FSR | erhält kurze Bestätigung (z.B. "zehn von 35 LVs veröffentlicht") |
 | (5*) | Betreuer | erhält automatisch eine Benachrichtigungsmail, in der er über die Veröffentlichung seiner Veranstaltungen informiert wird |
 
-* = nice to have
+\* = nice to have
 
 ### Szenarien für alternative Abläufe 
 
