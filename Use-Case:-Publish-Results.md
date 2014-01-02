@@ -25,8 +25,8 @@
 
 ### Szenario für den Standardablauf 
 
-|_.Schritt |_.Nutzer |_.Beschreibung der Aktivität |
-|----------|---------|-----------------------------|
+| Schritt | Nutzer | Beschreibung der Aktivität |
+|---------|--------|----------------------------|
 | 1 | FSR | ruft Liste aller evaluierten Lehrveranstaltungen auf |
 | 2 | FSR | wählt die zu veröffentlichenden Lehrveranstaltungen aus, mit einem Klick können alle LV auf einmal ausgewählt werden |
 | 3 | FSR | bestätigt die zu veröffentlichenden Lehrveranstaltungen |
