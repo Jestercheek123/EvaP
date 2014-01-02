@@ -7,7 +7,7 @@
     </tr>
     <tr>
         <th>Vorbedingung </th>
-        <td> Studienreferat hat die Belegungsdaten des aktuellen Semesters als Excel-Sheet exportiert und dem FSR zugesandt </td>
+        <td> Universitätsverwaltung hat die Belegungsdaten des aktuellen Semesters als Excel-Sheet exportiert und dem FSR zugesandt </td>
     </tr>
     <tr>
         <th>Nachbedingung </th>
