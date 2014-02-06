@@ -8,6 +8,7 @@
 - A **student**/*Student* is a person enrolled in a course.
 - Students who are enrolled in a course are called **participants**/*Teilnehmer* of that course.
 - Students who took part in the evaluation of a course are called **voters**/*Abstimmende*.
+- Participants who did not yet take part in the evaluation of a course are called **due participants**/*ausstehende Teilnehmer*.
 - Any person using the system at any time is called a **user**/*Benutzer*.
 - Users without Kerberos credentials need a **login key**/*Anmeldeschlüssel* to log in.
 
