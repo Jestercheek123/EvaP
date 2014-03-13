@@ -7,7 +7,7 @@ Alternativ hätten wir - wie im alten System EvaJ - einer Veranstaltung auch Typ
 ### Fragebögenvarianten
 
 Es gibt zwei Fragebogentypen:
-* Sachfragebögen beziehen sich allgemein auf eine Lehrveranstaltung, z.B. auf die Lehrmittel und den Inhalt. 
+* Lehrveranstaltungs-Fragebogen beziehen sich allgemein auf eine Lehrveranstaltung, z.B. auf die Lehrmittel und den Inhalt. 
 * Personenfragebögen beziehen sich auf einen Dozenten, z.B. Professor, Übungsleiter, Tutor. 
 
 Jeder Fragebögen hat einen Titel je Sprache und eine oder mehr Fragen.
