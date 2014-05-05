@@ -1,11 +1,11 @@
-EvaP versendet folgende eMails automatisch:
-* "Publishing Notice" - Informations-Email an alle Teilnehmer und Mitwirkenden nachdem die Ergebnisse vom FSR veröffentlicht wurden
-* "Login Key Created" - Versand der Anmeldeschlüssel an Externe
-* "Student Reminder" - Erinnerungs Email an alle Teilnehmer, die noch nicht evaluiert haben
-* "Lecturer Review Notice" - Aufforderungs-eMail an den Verantwortlichen (und alle Personen mit Edit-Rechten im cc)  die Daten einer Lehrveranstaltung zu ergänzen (z.B. Betreuer und deren Fragebögen)
+EvaP sends the following emails automatically:
+* "Publishing Notice" - Information email to all participants and contributors of a course after the results are published by FSR
+* "Login Key Created" - Email containing the login key for an external user
+* "Student Reminder" - Reminder email to all participants that have not evaluated yet
+* "Lecturer Review Notice" - Request email to all persons responsible (and all persons with edit rights in CC) to complete the information of a course (e.g. contributors and their questionnaires)
 
-Dazu existieren jeweils Vorlagen mit Platzhaltern. Die Platzhalter werden vom System entsprechend ersetzt und eMails an die betroffenen Personen geschickt.
+For all of these, templates with placeholders exist. The placeholders are replaced by the system appropriately. Finally, the emails are sent out to the individuals concerned.
 
-Die Templates lassen sich in der FSR-Ansicht von Evap einsehen und bearbeiten.
+The templates can be viewed and edited in the FSR perspective.
 
-Neben diesen automatisch versendeten eMails können auch manuell aus der Semesterübersicht heraus Emails (Betreff & Text beliebig) an alle Teilnehmer einer Lehrveranstaltung und/oder den Verantwortlichen (mit allen Mitwirkenden mit Editierrechten im CC) und/oder alle Mitwirkende versendet werden.
+Apart from these automatically sent emails, there is also the possibility to manually sent emails (arbitrary subject and content) to all participants of a course and/or the persons responsible (including all contributors with edit rights in CC) and/or all contributors. This can be done by the FSR from the semester overview.
