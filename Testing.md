@@ -34,16 +34,16 @@ EvaP has different [[Users and their Rights]]. Make sure that they can do/see al
 
 Special attention should be paid to situations where a user can have multiple roles (e.g. an individual being participant of one course and contributor of another) or is the delegate of one or more other individuals.
 
-## Emails
+## [[Emails]]
 At several occasions, emails are sent out to notify users of the system about important events:
 
 * A person resonsible and its delegates must be notified when one or more of their courses become ``pending for lecturer approval``.
 * A participant must be notified if he or she has not performed yet the evaluation for a course whose evaluation phase is about to expire.
 * All contributors and participants of a course must be notified when the evaluation results are ``published``.
+* A login key email must be sent to an external user upon a login key generation request. For obvious reasons, the email must contain the login key.
+* Manual emails must be sent out properly to all recipients, for every combination of the audience (for details on the options, please see the [[Emails]] page). Only one email should be received by each recipient, no matter what combination of user groups was chosen.
 
-[TODO: Did I forget something?]
-
- We need to make sure that
+We need to make sure that
 * emails are sent at the right time to the right users. E.g. hitting the button on the webpage that triggers a list of courses to become ``pending for lecturer approval`` *must* result in emails being sent.
 * bulk emails are sent out where appropriate
 * email templates are used
