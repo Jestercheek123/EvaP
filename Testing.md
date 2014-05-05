@@ -11,6 +11,8 @@ The following list is by no means complete but should serve as a starting point 
 * A course can take the lifecycle/state machine described in [[Evaluation Process]] and *only* that lifecycle. For instance, a transition from ``new`` to ``approved by FSR`` is allowed, whereas a transition from ``new`` to ``published`` is not. If a transition requires certain constraints to be satisfied, make sure that the transition can only fire if and only if these requirements are met.
 * The state of a course can only be altered by the authorized individuals or mechanisms. *Student representatives* (in the following: *FSR members*) can do any allowed transition, except the start or end of the evaluation phase which is handled by a time-based trigger [TODO: reference!]. (Un)Authenticated users cannot alter the state of a course.
 
+[todo: add tests for more of the different course states]
+
 ### Create new course / [[Import enrollment data|Use Case: Import Enrollment data]]
 
 * An *FSR member* can create a new course, edit the details (name, description, evaluation date, etc.), assign a *person responsible* and add participants to it.
@@ -41,7 +43,7 @@ At several occasions, emails are sent out to notify users of the system about im
 * A participant must be notified if he or she has not performed yet the evaluation for a course whose evaluation phase is about to expire.
 * All contributors and participants of a course must be notified when the evaluation results are ``published``.
 * A login key email must be sent to an external user upon a login key generation request. For obvious reasons, the email must contain the login key.
-* Manual emails must be sent out properly to all recipients, for every combination of the audience (for details on the options, please see the [[Emails]] page). Only one email should be received by each recipient, no matter what combination of user groups was chosen.
+* Manual emails must be sent out properly to all recipients, for every combination of the audience (for details on the options, please see the [[Emails]] page). Usually only one email should be received by each recipient, no matter what combination of user groups was chosen.
 
 We need to make sure that
 * emails are sent at the right time to the right users. E.g. hitting the button on the webpage that triggers a list of courses to become ``pending for lecturer approval`` *must* result in emails being sent.
