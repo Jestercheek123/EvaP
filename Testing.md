@@ -31,7 +31,13 @@ The following list is by no means complete but should serve as a starting point 
 * An FSR member can [[create a new questionnaire|Use Case: Create Questionnaire]].
 * An FSR member can change an existing questionnaire (e.g. rename, alter description, add/delete questions, set/unset as person questionnaire)
 
-## Users and their Rights
+## User management
+* A new user can be created,
+ * either via the GUI or
+ * via the management command (see related issue [#289](https://github.com/fsr-itse/EvaP/issues/289)).
+* User accounts can be merged via the management command.
+
+### Users and their Rights
 EvaP has different [[Users and their Rights]]. Make sure that they can do/see all the things they are allowed to. Make sure that they cannot do anything that they should not be able to do (e.g. a non-FSR member creating new user accounts, a non-participant of a course voting for a course, a non-FSR member being able to access administration web pages and so on).
 
 Special attention should be paid to situations where a user can have multiple roles (e.g. an individual being participant of one course and contributor of another) or is the delegate of one or more other individuals.
