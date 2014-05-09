@@ -24,7 +24,7 @@ The following list is by no means complete but should serve as a starting point 
  * he/she is participant of that course
  * the course is ``in evaluation``
  * he/she has not yet evaluated that course
-* A participant can use any available option from the Likert scale, including "keine Angabe" [TODO: what's the English translation?]
+* A participant can use any available option from the Likert scale, including "no answer"
 * After the participant has evaluated the course, his/her answers are successfully recorded.
 
 ## Questionnaire management
