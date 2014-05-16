@@ -12,7 +12,7 @@ Es gibt zwei Fragebogentypen:
 
 Jeder Fragebögen hat einen Titel je Sprache und eine oder mehr Fragen.
 
-Jede Lehrveranstaltung kann mehrere Sachfragebögen haben und jedem Mitwirkenden können ein andere Auswahl an Personenfragebögen zugeteilt werden (siehe [[Zuordnung]]). Jeder Fragebogen kann (und sollte) von mehreren Lehrveranstaltungen genutzt werden.
+Jede Lehrveranstaltung kann mehrere Sachfragebögen haben und jedem Mitwirkenden können ein andere Auswahl an Personenfragebögen zugeteilt werden (siehe [[Zuordnung | Questionnaires: Assignment]]). Jeder Fragebogen kann (und sollte) von mehreren Lehrveranstaltungen genutzt werden.
 
 ### Fragetypen
 
@@ -26,7 +26,7 @@ Wir haben uns entschieden auch ein "keine Angabe"-Feld anzubieten. Das verleitet
 
 Es gibt folgende Informationen in englischer und deutscher Sprache.
 
-* Verwaltungsinformationen werden den Dozenten und dem FSR angezeigt, um die [[Zuordnung der Fragebögen]] zu ermöglichen.
+* Verwaltungsinformationen werden den Dozenten und dem FSR angezeigt, um die [[Zuordnung der Fragebögen | Questionnaires: Assignment]] zu ermöglichen.
   * Name: Ein zusammengesetzter Name, der angibt, wofür der Fragebogen hauptsächlich genutzt wird, z.B. Vorlesung2 - Lehrmittel.
   * Beschreibung: Tooltips, die während der Zuordnung angezeigt werden.
 * Informationen für die Evaluierungsansicht
@@ -34,7 +34,7 @@ Es gibt folgende Informationen in englischer und deutscher Sprache.
   * Einleitung: Erster erklärender Satz im Fragebogenblock
 * Interne Attribute
   * Sortierindex: Gibt die Sortierreihenfolge vor. Damit können beispielsweise generelle Kommentarfragen an das untere Ende der Seite geschoben werden. Höhere Nummern werden weiter nach unten sortiert.
-  * Personenfragebogen: Nur wenn der Haken gesetzt ist, lässt sich der Fragebogen einer Person in der [[Zuordnung]] zuordnen.
+  * Personenfragebogen: Nur wenn der Haken gesetzt ist, lässt sich der Fragebogen einer Person in der [[Zuordnung | Questionnaires: Assignment]] zuordnen.
   * Obsolet: Verbirgt den Fragebogen in der Auswahlliste.
 
 
