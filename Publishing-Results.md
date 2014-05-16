@@ -6,7 +6,7 @@ Die Gesamtnote besteht zu 50% aus dem Durchschnitt aller Teilnoten von Sachfrage
 
 ### Online-Version: Sichtbarkeit der Kommentare
 
-Kommentare auf Sach-Fragebögen können von allen Personen eingesehen werden, welche in der Liste der zu Bewertenden Lehrveranstaltungsbetreuer eingetragen sind. Auch deren Vertreter sind zur Einsicht berechtigt. (TODO Verify)
+Kommentare auf Sach-Fragebögen können von dem Verantwortlichen der Lehrveranstaltung sowie von der bewerteten Person eingesehen werden. Auch deren Vertreter sind zur Einsicht berechtigt.
 
 Kommentare zu Personenfragebögen können nur von den zu kommentierenden Personen sowie deren Vertretern eingesehen werden.
 
