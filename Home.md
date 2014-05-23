@@ -12,28 +12,25 @@ As completely as possible this Wiki describes the evaluation process itself, the
 
 This is not a user manual, but it provides some background knowledge about the concepts used within the project. A step-by-step manual and an FAQ section for the different types of users (students, lecturers, student representatives) will be added later on.
 
-### Table of Contents
+## Table of Contents
 
-[[Terminology]]
+#### 1. [[Terminology]]
 
-[[Domain Description]]
+#### 2. Meta
 
-[[Users and their Rights]]
+  1. [[Domain Description]]
+  1. [[Requirements Engineering]]
+  1. [[Use Cases]]
 
-[[Evaluation Process]]
+#### 3. Management
+  1. [[Users and their Rights]]
+  1. [[User Management]]
+  1. [[Questionnaires: Structure]]
+  1. [[Questionnaires: Assignment]]
+  1. [[Emails]]
 
-[[User Management]]
+#### 4. Evaluation Process
+  1. [[Evaluation Process]]
+  1. [[Publishing Results]]
 
-[[Questionnaires: Structure]]
-
-[[Questionnaires: Assignment]]
-
-[[Publishing Results]]
-
-[[Emails]]
-
-[[Use Cases]]
-
-[[Requirements Engineering]]
-
-[[Testing]]
+#### 5. [[Testing]]
