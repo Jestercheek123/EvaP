@@ -23,6 +23,7 @@
 	- A **degree**/*Studiengang* (i.e. Bachelor or Master)
 	- An **evaluation period**/*Evaluierungszeitraum* in which the course is available for evaluation
 	- Questionnaires that are assigned to the course.
+	- The current **state**/*Zustand* of the course (see [[Evaluation States]])
 
 ### Questionnaires
 
