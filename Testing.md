@@ -55,6 +55,3 @@ We need to make sure that
 * emails are sent at the right time to the right users. E.g. hitting the button on the webpage that triggers a list of courses to become ``pending for lecturer approval`` *must* result in emails being sent.
 * bulk emails are sent out where appropriate
 * email templates are used
-
-## Other constraints
-* A person responsible or contributor cannot be participant of its own course.
