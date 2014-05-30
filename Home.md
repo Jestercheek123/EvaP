@@ -30,7 +30,7 @@ This is not a user manual, but it provides some background knowledge about the c
   1. [[Emails]]
 
 #### 4. Evaluation Process
-  1. [[Evaluation Process]]
+  1. [[Evaluation States]]
   1. [[Publishing Results]]
 
 #### 5. [[Testing]]
