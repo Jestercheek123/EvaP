@@ -30,7 +30,7 @@
 - Each **questionnaire**/*Fragebogen* has a **name**/*Name* by which it can be referenced.
 - A questionnaire consists of one or multiple **questions**/*Fragen*.
 - To submit a questionnaire during the evaluation process each question must have exactly one **answer**/*Antwort*.
-- An answer can either be given on a **Likert scale**/*Likert-Skala* or in a **free text field**/*Freitext-Feld*.
+- An answer can either be given on a **Likert scale**/*Likert-Skala*, a **grading scale**/*Noten-Skala* or in a **free text field**/*Freitext-Feld*.
 - A possible answer is also rating **no answer**/*keine Angabe* respectively submitting an empty text field.
 - Questionnaires have a **questionnaire type**/*Fragebogentyp* defining whether it's used to evaluate courses (**course questionnaire**/*Lehrveranstaltungs-Fragebogen*) or contributors (**contributor questionnaire**/*Personenfragebogen*).
 
