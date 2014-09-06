@@ -31,6 +31,7 @@ This is not a user manual, but it provides some background knowledge about the c
 
 #### 4. Evaluation Process
   1. [[Evaluation States]]
+  1. [[Calculation of Results]]
   1. [[Publishing Results]]
 
 #### 5. [[Testing]]
