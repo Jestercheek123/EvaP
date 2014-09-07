@@ -11,27 +11,3 @@ EvaP was developed at the Hasso Plattner Institute (HPI) in Potsdam, Germany, wh
 As completely as possible this Wiki describes the evaluation process itself, the functionality of the evaluation platform and reasons for design decisions. It contains all important information for the administrating student representatives and for everyone who is interested in taking part in the platform's development.
 
 This is not a user manual, but it provides some background knowledge about the concepts used within the project. A step-by-step manual and an FAQ section for the different types of users (students, lecturers, student representatives) will be added later on.
-
-## Table of Contents
-
-#### 1. [[Terminology]]
-
-#### 2. Meta
-
-  1. [[Domain Description]]
-  1. [[Requirements Engineering]]
-  1. [[Use Cases]]
-
-#### 3. Management
-  1. [[Users and their Rights]]
-  1. [[User Management]]
-  1. [[Questionnaires: Structure]]
-  1. [[Questionnaires: Assignment]]
-  1. [[Emails]]
-
-#### 4. Evaluation Process
-  1. [[Evaluation States]]
-  1. [[Calculation of Results]]
-  1. [[Publishing Results]]
-
-#### 5. [[Testing]]
