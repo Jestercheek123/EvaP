@@ -37,3 +37,8 @@
 ### Data
 
 - The information which courses are taught, what name, type, degree and responsible person they have and which students are enrolled in them is called **enrollment data**/*Belegungsdaten*.
+
+### Rewards
+
+- Students can get **reward points**/*Belohnungspunkte*, when they evaluated all their courses in one semester.
+- These points can be redeemed for **Reward Point Redemption Events**/*Veranstaltungen zum Einlösen von Belohnungspunkten*, which can be created by staff users.
