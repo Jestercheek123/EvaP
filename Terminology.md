@@ -6,7 +6,7 @@
 - At every time one of the contributors of a course is the **person responsible for the course**/*Lehrveranstaltungs-Verantwortlicher*. This role is assigned by the student representatives.
 - Every contributor can get assigned **edit rights**/*Bearbeitungsrechte* for a course by any person who already has these edit rights for this very course and thereby becomes an **editor**/*Bearbeiter*. The responsible person always has edit rights.
 - **Delegates**/*Stellvertreter* are users who are assigned to other users. A delegate has the combined edit rights for courses of all users he or she is **representing**.
-- **CC-Users**/*CC-Benutzer* are users who are receiving a copy of all emails that are sent to their **CC'ing users**. 
+- **CC-Users**/*CC-Benutzer* are users who are receiving a copy of all emails that are sent to their **CC'ing users**/*in CC setzende Benutzer*. 
 - A **student**/*Student* is a person participating in a course.
 - Students who are participating in a course are called **participants**/*Teilnehmer* of that course.
 - Students who took part in the evaluation of a course are called **voters**/*Abstimmende*.
