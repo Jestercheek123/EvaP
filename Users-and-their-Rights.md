@@ -4,8 +4,8 @@ This page describes the different kind of roles a person can have and the rights
 Users without an account cannot do anything useful. There is no way to sign up, and there are no public pages besides the login and FAQ pages.
 
 
-### User
-Users are able to login via Kerberos or a login key. They can see all published results.
+### Users with an account
+Users with an account are able to login via Kerberos or a login key. They can see all published results.
 
 
 ### Participant
