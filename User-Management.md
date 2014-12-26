@@ -1,49 +1,44 @@
-### Wie werden neue Nutzer ins System eingetragen?
+### How are new users added?
 
-Es gibt drei Wege, über die neue Benutzer angelegt werden können:
-* Import der Belegungsdaten
-* Anmeldung am System mit HPI-Credentials
-* Manuell über das Web-Interface (manchmal notwendig für externe Dozenten)
+There are three options:
+* Import of enrollment data
+* First login with Kerberos-credentials
+* Manually via web-interface (sometimes necessary for external contributors)
 
-Eine Registrierung durch den Nutzer selbst ist nicht möglich.
+There is no possibility for users to sign up on their own.
 
-Es kann also passieren, dass Verantwortliche einen Mitwirkenden hinzufügen wollen, dieser aber noch nicht im System existiert. Deshalb gibt es einen Hinweis, dass sich die Verantwortlichen bei Problemen zuerst an den Fachschaftsrat wenden sollen.
+It is possible that a responsible wants to add a contributor which does not yet exist. In that case, they need to ask the EvaP staff to create accounts for these users.
 
+### How can users be deleted?
 
-### Wie können Nutzer gelöscht werden?
-
-Nutzer können NICHT gelöscht werden, wenn Sie einer Lehrveranstaltung als Lehrender zugeordnet sind.
-Alle übrigen Nutzer können _technisch_ zur Zeit gelöscht werden.
-
-Allerdings verlieren sie dadurch auch ihre Zugehörigkeit zu einer Lehrveranstaltung als Teilnehmer.
-Wenn sie für diese Lehrveranstaltung abgestimmt haben, bleibt ihre Abstimmung bestehen. Da die Evaluierungsergebnisse live berechnet werden, werden hierdurch aber "falsche" Ergebnisse berechnet.
-
-Faktisch dürfen momentan keine Nutzer gelöscht werden, da hierdurch das Abstimmungsergebnis verfälscht wird! Die Anzahl der Teilnehmer von Lehrveranstaltungen wird dadurch verändert!
-
-### User-Aging: Wann können oder sollen bestehende Nutzer-Daten gelöscht werden?
-
-Technisch gibt es dafür keine Lösung (siehe oben), ohne dass das Evaluierungsergebnis verfälscht werden!
-
-Grundsätzlich ist dies wünschenswert, da die Belegungen vergangener Semester für die Evaluierung irrelevant sind.
-Die Zuordnung von Nutzern zu Lehrveranstaltungen sollte gelöscht werden können. Und folglich kann dann der Nutzer gelöscht werden.
-
-Zu einem festgelegten Zeitpunkt (spätestens beim Freischalten der Lehrveranstaltung) sollte das Ergebnis der Evaluierung berechnet und fixiert werden. Das heißt, dass es unabhängig von den Benutzern und ihren Belegungen sein sollte.
-
-### Wie geht man mit Nutzernamen um, die doppelt vergeben wurden?
-
-### Wie geht man mit Nutzern um, die mehrere Nutzernamen haben?
-
-*Merge-Skript*
-
-### Welche Constraints und Felder hat das Datenmodell?
+Users cannot be deleted if they are contributor of a course or participant of a course that is or has been evaluation (in other words, if the user already had the chance to vote for that course), but has not been archived yet (not yet implemented, see [issue #371](https://github.com/fsr-itse/EvaP/issues/371)). This is necessary to keep results consistent. Right now, deleting contributors would also delete questionnaires and answers for that contributor, and deleting participants would alter the participant count of courses.
 
 
-### Wie funktioniert die Authentifizierung für HPI-ler?
+### User-Aging: When should users be deleted?
+
+For students: In theory, as soon as they don't have a university account anymore. If that is technically not possible, one probably has to resort to deleting them after a certain number of semesters.
+
+For contributors: Right now, it is not possible to delete contributors without altering results. As a workaround, one can give contributors a new username, e.g. by appending their ID to their previous username, as that username is not visible to users except in some staff pages. The importer will warn if a new contributor with the same username but different email address is about to be added (not yet implemented, see [issue #371](https://github.com/fsr-itse/EvaP/issues/371)).
 
 
-### Wie funktioniert die Authentifizierung für externe Nutzer?
+
+### In case of user account duplicates
+
+Use the merge_users command.
 
 
-### Wie werden FSR-Reche vergeben?
+### How does the authentication work for internal users?
 
-FSR setzt FSR-Flag mit der Aktion Nutzer bearbeiten.
+It uses Kerberos via the django-auth-kerberos backend for django. Kerberos settings are configurable in settings.py. If a user logs in into EvaP with Kerberos-credentials and has no account on EvaP yet, a new one is automatically created.
+
+
+### How does the authentication work for external users?
+
+External users need to enter their email address, whereafter EvaP sends them a randomly generated _login key_, if an account with that email address exists. This login key (which is unique, therefore it alone is enough to identify the user) can be used to log oneself in.
+
+Login keys expire after a certain number of days (configurable in the settings).
+
+
+### How are staff rights assigned?
+
+Currently that is only possible via the django admin pages (/admin), to which every staff member has access.
