@@ -9,6 +9,7 @@
 1. Management
   1. [[Users and their Rights]]
   1. [[User Management]]
+  1. [[Archiving]]
   1. [[Questionnaires: Structure]]
   1. [[Questionnaires: Assignment]]
   1. [[Emails]]
