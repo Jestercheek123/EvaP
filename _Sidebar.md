@@ -2,6 +2,7 @@
 
 1. [[Home]]
 1. [[Terminology]]
+1. [[Development Tips]]
 1. Meta
   1. [[Domain Description]]
   1. [[Requirements Engineering]]
