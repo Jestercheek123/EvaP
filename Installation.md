@@ -18,11 +18,11 @@ Vagrant and Hyper-V
 
 To use the Vagrant VM with Hyper-V as provider, do the following:
 
-1. Enable Hyper-V (note the warning on `this page <https://docs.vagrantup.com/v2/hyperv/index.html>`_).
+1. Enable Hyper-V (note the warning on [this page](https://docs.vagrantup.com/v2/hyperv/index.html)).
 
 2. Configure Networking
 
-  You can either connect the VM to your external network directly by creating an *External Virtual Switch* in Hyper-V Manager->Virtual Switch Manager, or use "NAT-Mode" by creating an *Internal Virtual Switch* and setting up `Windows Internet Connection Sharing <http://windows.microsoft.com/en-us/windows/using-internet-connection-sharing#1TC=windows-7>`_ (recommended).
+  You can either connect the VM to your external network directly by creating an *External Virtual Switch* in Hyper-V Manager->Virtual Switch Manager, or use "NAT-Mode" by creating an *Internal Virtual Switch* and setting up [Windows Internet Connection Sharing](http://windows.microsoft.com/en-us/windows/using-internet-connection-sharing#1TC=windows-7) (recommended).
 
 3. ``vagrant up --provider hyperv``
 
@@ -42,11 +42,11 @@ Clone the repository or copy the files into that directory. The installation sho
 Dependencies
 ------------
 
-EvaP is written in Python using the Django framework and you need at least Python 3.4 to run it. Apart from Python and Django there are some other dependencies that are listed in the file ``requirements.txt``. Use `pip <http://www.pip-installer.org/en/latest/installing.html>`_ to install these with the following command: ``pip install -r requirements.txt``.
+EvaP is written in Python using the Django framework and you need at least Python 3.4 to run it. Apart from Python and Django there are some other dependencies that are listed in the file ``requirements.txt``. Use [pip](http://www.pip-installer.org/en/latest/installing.html) to install these with the following command: ``pip install -r requirements.txt``.
 
-*For Windows users:* As ``lxml`` has native code and compiling it with your installed compiler usually fails, you need to install a precompiled package from `lfd.uci.edu <http://www.lfd.uci.edu/~gohlke/pythonlibs/>`_.
+*For Windows users:* As ``lxml`` has native code and compiling it with your installed compiler usually fails, you need to install a precompiled package from [lfd.uci.edu](http://www.lfd.uci.edu/~gohlke/pythonlibs/).
 
-*For Windows users:* For the compilation of translation files gettext is used. This can be downloaded as a precompiled package from `the GnuWin project <http://sourceforge.net/projects/gnuwin32/files/gettext/>`_.
+*For Windows users:* For the compilation of translation files gettext is used. This can be downloaded as a precompiled package from [the GnuWin project](http://sourceforge.net/projects/gnuwin32/files/gettext/).
 
 
 Database Initialization
@@ -127,11 +127,12 @@ To use Kerberos as an authentication backend, do the following:
 
 - copy the following to your ``localsettings.py`` and edit ``KRB5_REALM`` and ``KRB5_SERVICE`` according to your setup:
 
-    KRB5_REALM = 'EXAMPLE.COM'
-    KRB5_SERVICE = 'krbtgt@AS.EXAMPLE.COM'
-    INSTALLED_APPS += ('django_auth_kerberos',)
-    MIDDLEWARE_CLASSES += ('django_auth_kerberos.backends.KrbBackend',)
-
+```
+KRB5_REALM = 'EXAMPLE.COM'
+KRB5_SERVICE = 'krbtgt@AS.EXAMPLE.COM'
+INSTALLED_APPS += ('django_auth_kerberos',)
+MIDDLEWARE_CLASSES += ('django_auth_kerberos.backends.KrbBackend',)
+```
 
 Productive Environment: Cron Configuration
 ------------------------------------------
