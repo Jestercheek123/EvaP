@@ -41,5 +41,5 @@ Es gibt folgende Informationen in englischer und deutscher Sprache.
 ### Verwaltung von Fragebögen
 
 * Fragebögen können nur gelöscht werden, wenn sie nicht verwendet werden
-* Wurden Fragebögen in einer Evaluierung verwendet (d.h. es gibt abgegebene Stimmen), können sie nicht mehr geändert werden. (TODO: is this true?)
+* Wurden Fragebögen in einer Evaluierung verwendet (d.h. es gibt abgegebene Stimmen), können sie nicht mehr geändert werden.
 * Um verwendete Fragebögen zu ändern für eine neue Evaluierung kann man die alten einfach kopieren und anpassen.
