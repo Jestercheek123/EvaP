@@ -8,13 +8,13 @@ Bei der Bulkzuordnung werden die *Sachfragebögen* zu den Lehrveranstaltungen an
 
 In der FSR-Ansicht eines Semesters wählt man nun die Funktion "Fragebögen zuordnen" und kann für jeden Vorlesungstyp, der im aktuellen Semester existiert, die passenden Sachfragebögen auswählen. Anschließend werden diese schon für alle zugehörigen Veranstaltungen gesetzt.
 
-Wenn man die Bulk-Zuordnung erneut durchführt, werden die neuen Einstellungen überschrieben, sobald wenigstens ein Fragebogen pro Typ gewählt ist. (TODO Check)
+Wenn man die Bulk-Zuordnung erneut durchführt, werden die bisherigen Zuweisungenen für alle Typen überschrieben, für die wenigstens ein Fragebogen ausgewählt ist.
 
 ### Nachträgliche Zuordnung / Korrektur der Fragebögen
 
 Unabhängig von der Bulk-Zuordnung kann der FSR (Zustände: bis einschließlich "von FSR bestätig") bzw. dürfen die Dozenten für ihre jeweilige Lehrveranstaltung (Zustand: für Dozenten freigegeben) Einstellungen an der Veranstaltung vornehmen, d.h. Auswahl/Entfernen der Sachfragebögen per Checkbox sowie Hinzufügen/Entfernen von Mitwirkenden und zuteilen von passenden Personenfragebögen.
 
-Wenn der FSR eine Veranstaltung freigibt (Zustandsübergang von "neu" nach "vorbereitet"), werden alle bisher eingetragenen Mitwirkenden per E-Mail benachrichtigt, dass sie jetzt Einstellungen vornehmen können. Gleichzeitig werden deren Stellvertreter benachrichtigt. ([TODO](https://github.com/fsr-itse/EvaP/issues/146))
+Wenn der FSR eine Veranstaltung freigibt (Zustandsübergang von "neu" nach "vorbereitet"), werden alle bisher eingetragenen Mitwirkenden mit edit-Rechten und deren Stellvertreter per E-Mail benachrichtigt, dass sie jetzt Einstellungen vornehmen können.
 
 Bei der Bearbeitung der Fragebögen gibt es für den Bearbeitenden zwei Buttons. Einer speichert das Ergebnis nur zwischen. Ein anderer speichert das Ergebnis und schaltet den Zustand der Veranstaltung weiter auf "bestätigt".
 
