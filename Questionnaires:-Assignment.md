@@ -1,14 +1,15 @@
-Ein essentieller Teil des Evaluierungsprozesses sind die Fragebögen. Sie sollten durch die Studenten sinnvoll zu beantworten sein und für die Dozenten hilfreiches Feedback bringen.
 
-Damit die Zuordnung etwas vereinfacht werden kann, gibt es einen Schritt "Bulkzuordnung" und noch eine nachträgliche Korrektur.
+An integral part of the evaluation process are the questionnaires. Students should be able to give meaningful answers to them and they should facilitate helpful feedback for the lecturers.
 
-### Bulkzuordnung aufgrund des Lehrveranstaltungstyps
+Assigning questionnaires to courses is possible through the "bulk assignment" functionality and manual assignment.
 
-Bei der Bulkzuordnung werden die *Sachfragebögen* zu den Lehrveranstaltungen anhand ihres Typs hinzugefügt. Der Typ einer Lehrveranstaltung (Vorlesung, Vorlesung/Übung, Seminar etc.) stammt aus der importierten Excel-Tabelle oder wird beim manuellen Erstellen angegeben.
+### Bulk assignment using the course type
 
-In der FSR-Ansicht eines Semesters wählt man nun die Funktion "Fragebögen zuordnen" und kann für jeden Vorlesungstyp, der im aktuellen Semester existiert, die passenden Sachfragebögen auswählen. Anschließend werden diese schon für alle zugehörigen Veranstaltungen gesetzt.
+On the bulk assignment page, staff users can select a number of questionnaires per course type (lecture, project seminar etc.), which are then assigned to all courses of that type.
 
-Wenn man die Bulk-Zuordnung erneut durchführt, werden die bisherigen Zuweisungenen für alle Typen überschrieben, für die wenigstens ein Fragebogen ausgewählt ist.
+The available course types are collected from the courses of the current semester. Only courses in the state 'new' are used, and only those will be affected by the bulk assignment.
+
+If a staff user performs the bulk assignment a second time, it will overwrite all assignments for courses of all types for which at least one questionnaire has been selected.
 
 ### Nachträgliche Zuordnung / Korrektur der Fragebögen
 
