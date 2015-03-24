@@ -9,7 +9,6 @@ An alternative would have been to determine the questionnaires for a course stri
 There are two questionnaire types:
 * Course questionnaires refer to a course in general, e.g. teaching materials and contents. 
 * Contributor questionnaires refer to a contributor, e.g. a lecturer or teaching assistant.
-
 * Personenfragebögen beziehen sich auf einen Dozenten, z.B. Professor, Übungsleiter, Tutor. 
 
 Each questionnaire has a title and one or more questions.
