@@ -9,7 +9,8 @@ An alternative would have been to determine the questionnaires for a course stri
 There are two questionnaire types:
 * Course questionnaires refer to a course in general, e.g. teaching materials and contents. 
 * Contributor questionnaires refer to a contributor, e.g. a lecturer or teaching assistant.
-* Personenfragebögen beziehen sich auf einen Dozenten, z.B. Professor, Übungsleiter, Tutor. 
+
+Contributor questionnaires cannot be assigned to courses and vice versa.
 
 Each questionnaire has a title and one or more questions.
 
@@ -21,33 +22,26 @@ Each course can have multiple course questionnaires assigned and to each contrib
 There are three question types:
 * Likert questions measure agreement/disagreement on a scale from 1 (complete agreement) to 5 (complete disagreement)
 * Grade questions are similar to likert questions but use school grades from 1 (best) to 5 (worst) instead of agreement levels
-* Comment questions which can be answered in a text field. These comments are reviewed by staff users before publishing.
+* Comment questions can be answered in a text field. These comments are reviewed by staff users before publishing.
 
 For likert and grade questions there is also the option to select a "no answer" field when evaluating. This might lead students to spend less thoughts on their answers, but was considered necessary nonetheless, because TODO.
 
 
-
-Jeder Fragebögen hat einen Titel je Sprache und eine oder mehr Fragen.
-
-Jede Lehrveranstaltung kann mehrere Sachfragebögen haben und jedem Mitwirkenden können ein andere Auswahl an Personenfragebögen zugeteilt werden (siehe [[Zuordnung | Questionnaires: Assignment]]). Jeder Fragebogen kann (und sollte) von mehreren Lehrveranstaltungen genutzt werden.
-
-
 ### Questionnaire attributes
 
-* Attributes that are shown to lecturers and staff users to help with [[questionnaire assignment | Questionnaires: Assignment]].
-  * Name: A short name describing the main use of the questionnaire, e.g. "Lecture - teaching material"
-  * Description: A tooltip that is shown during assignment.
-* Informationen für die Evaluierungsansicht
-  * Öffentlicher Name/Titel: Titel für den Fragebogenblock, wie er den Studenten angezeigt wird
-  * Einleitung: Erster erklärender Satz im Fragebogenblock
-* Interne Attribute
-  * Sortierindex: Gibt die Sortierreihenfolge vor. Damit können beispielsweise generelle Kommentarfragen an das untere Ende der Seite geschoben werden. Höhere Nummern werden weiter nach unten sortiert.
-  * Personenfragebogen: Nur wenn der Haken gesetzt ist, lässt sich der Fragebogen einer Person in der [[Zuordnung | Questionnaires: Assignment]] zuordnen.
-  * Obsolet: Verbirgt den Fragebogen in der Auswahlliste.
+* Attributes that are shown to lecturers and staff users to help with [[questionnaire assignment | Questionnaires: Assignment]]:
+  * Name: A short name describing the main use of the questionnaire, e.g. "Lecture - teaching materials"
+  * Description: A tooltip that is shown during assignment to provide a more detailed description of the questionnaire's contents.
+* Attributes that are visible to students:
+  * Public name/title: The title will be the headline of the questionnaire as shown to students.
+  * Introduction: A short text shown below the headline that explains/introduces the questionnaire.
+* Internal attributes:
+  * Sorting index: Higher numbers make the questionnaire appear farther down the page. Useful to e.g. move general comment questions to the bottom of the page.
+  * Is for contributors: See "Questionnaire types" section above.
+  * Obsolete: Hides the questionnaire in questionnaire selection widgets.
 
 
-### Verwaltung von Fragebögen
+### Questionnaire management
 
-* Fragebögen können nur gelöscht werden, wenn sie nicht verwendet werden
-* Wurden Fragebögen in einer Evaluierung verwendet (d.h. es gibt abgegebene Stimmen), können sie nicht mehr geändert werden.
-* Um verwendete Fragebögen zu ändern für eine neue Evaluierung kann man die alten einfach kopieren und anpassen.
+ * Questionnaires can be deleted and edited only if they are not used for any course.
+ * To change existing questionnaires for use in a new evaluation, staff users can copy the existing one and then modify the copy.
