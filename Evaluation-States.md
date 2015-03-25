@@ -6,7 +6,7 @@
 1. Create a new semester.
 1. Import the data. All courses are now in the state **new**.
 1. You probably should spot-check the data after importing.
-1. [[Assign questionnaires]]. These are the default questionnaires based on the course type and can be changed per course later on.
+1. [[Assign questionnaires | Questionnaires: Assignment]]. These are the default questionnaires based on the course type and can be changed per course later on.
 
 [[Files/states_of_a_course.png]]
 
