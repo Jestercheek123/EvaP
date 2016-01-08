@@ -65,6 +65,7 @@ You have to run some additional commands during the installation and whenever yo
 - ``python manage.py migrate`` to perform any potential database updates.
 - ``python manage.py collectstatic`` to collect all files that the front-end webserver should serve.
 - ``python manage.py compilemessages`` to update the binary translation catalog.
+- ``python manage.py createcachetable`` to, well, create the table used for caching.
 
 Finally, restart the Apache web server.
 
