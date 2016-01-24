@@ -1,6 +1,6 @@
 We want to make sure that EvaP behaves the way we intended and *only* this way. Bad things must not happen. This is why we need an acceptable test coverage.
 
-[At the moment](https://github.com/fsr-itse/EvaP/commit/5fb89162e5419cfde0378e3c8f180fca1687b672) we have a couple of test cases in ``evap.fsr`` for the administration of courses. However, there are still some main aspects which should be put under the umbrella of an automated test.
+[At the moment](https://github.com/fsr-itse/EvaP/commit/5fb89162e5419cfde0378e3c8f180fca1687b672) we have a couple of test cases in ``evap.staff`` for the administration of courses. However, there are still some main aspects which should be put under the umbrella of an automated test.
 
 The following list is by no means complete but should serve as a starting point for testing ideas. Wherever possible, a wiki-page or issue should be referenced for further details. Additions welcome.
 
@@ -8,15 +8,15 @@ The following list is by no means complete but should serve as a starting point 
 
 ## Evaluation process
 
-* A course can take the lifecycle/state machine described in [[Evaluation Process]] and *only* that lifecycle. For instance, a transition from ``new`` to ``approved by FSR`` is allowed, whereas a transition from ``new`` to ``published`` is not. If a transition requires certain constraints to be satisfied, make sure that the transition can only fire if and only if these requirements are met.
-* The state of a course can only be altered by the authorized individuals or mechanisms. *Student representatives* (in the following: *FSR members*) can do any allowed transition, except the start or end of the evaluation phase which is handled by a time-based trigger [TODO: reference!]. (Un)Authenticated users cannot alter the state of a course.
+* A course can take the lifecycle/state machine described in [[Evaluation Process]] and *only* that lifecycle. For instance, a transition from ``new`` to ``approved`` is allowed, whereas a transition from ``new`` to ``published`` is not. If a transition requires certain constraints to be satisfied, make sure that the transition can only fire if and only if these requirements are met.
+* The state of a course can only be altered by the authorized individuals or mechanisms. *Staff members* can do any allowed transition, except the start or end of the evaluation phase which is handled by a time-based trigger [TODO: reference!]. (Un)Authenticated users cannot alter the state of a course.
 
 [todo: add tests for more of the different course states]
 
 ### Create new course / [[Import enrollment data|Use Case: Import Enrollment data]]
 
-* An *FSR member* can create a new course, edit the details (name, description, evaluation date, etc.), assign a *person responsible* and add participants to it.
-* An *FSR member* can import a list of courses.
+* A *staff member* can create a new course, edit the details (name, description, evaluation date, etc.), assign a *person responsible* and add participants to it.
+* A *staff member* can import a list of courses.
 * If an import fails, nothing is imported at all.
 
 ### [[Evaluate courses|Use Case: Evaluate Courses]]
@@ -28,8 +28,8 @@ The following list is by no means complete but should serve as a starting point 
 * After the participant has evaluated the course, his/her answers are successfully recorded.
 
 ## Questionnaire management
-* An FSR member can [[create a new questionnaire|Use Case: Create Questionnaire]].
-* An FSR member can change an existing questionnaire (e.g. rename, alter description, add/delete questions, set/unset as person questionnaire)
+* A staff member can [[create a new questionnaire|Use Case: Create Questionnaire]].
+* A staff member can change an existing questionnaire (e.g. rename, alter description, add/delete questions, set/unset as person questionnaire)
 
 ## User management
 * A new user can be created,
@@ -38,7 +38,7 @@ The following list is by no means complete but should serve as a starting point 
 * User accounts can be merged via the management command.
 
 ### Users and their Rights
-EvaP has different [[Users and their Rights]]. Make sure that they can do/see all the things they are allowed to. Make sure that they cannot do anything that they should not be able to do (e.g. a non-FSR member creating new user accounts, a non-participant of a course voting for a course, a non-FSR member being able to access administration web pages and so on).
+EvaP has different [[Users and their Rights]]. Make sure that they can do/see all the things they are allowed to. Make sure that they cannot do anything that they should not be able to do (e.g. a non-staff member creating new user accounts, a non-participant of a course voting for a course, a non-staff member being able to access administration web pages and so on).
 
 Special attention should be paid to situations where a user can have multiple roles (e.g. an individual being participant of one course and contributor of another) or is the delegate of one or more other individuals.
 
