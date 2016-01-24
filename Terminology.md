@@ -1,7 +1,7 @@
 ### People
 
 - Any person using the system at any time is called a **user**/*Benutzer*.
-- Responsible for the evaluation system are **the student representatives**/*der Fachschaftsrat*. A For convenience reasons the student representatives are also called (the) **FSR** for short (adopted from the representative's name at Hasso Plattner Insitute). A member of the FSR is called **student representative**/*FSR-Mitglied*. They work as administrators of the system and have full edit rights for users, courses and questionnaires.
+- Responsible for the evaluation system are **staff** users/*Verwalter*. They work as administrators of the system and have full edit rights for users, courses, questionnaires, ...
 - All users who are added to have teaching roles in a course (lecturers, tutors, etc.) are called **contributors**/*Mitwirkende*.
 - At every time one of the contributors of a course is the **person responsible for the course**/*Lehrveranstaltungs-Verantwortlicher*. This role is assigned by the student representatives.
 - Every contributor can get assigned **edit rights**/*Bearbeitungsrechte* for a course by any person who already has these edit rights for this very course and thereby becomes an **editor**/*Bearbeiter*. The responsible person always has edit rights.
