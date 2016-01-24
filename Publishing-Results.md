@@ -13,14 +13,14 @@ The questionnaires may contain Likert questions, grading questions and free text
 Some users can see more detailed information within the results. Please note that any assigned delegate can also see the results if the represented person can see them (with the exemption of private text answers).
 These are the different types of answers and the respective publishing levels:
 
-Results                                                         | standard user | contributor           | responsible contributor | *export*         | *full export*   | staff
-----------------------------------------------------------------|---------------|-----------------------|-------------------------|------------------|-----------------|------
-#participants, #voters                                          | yes           | yes                   | yes                     | yes              | yes             | yes
-total grades                                                    | yes*          | yes*                  | yes*                    | yes*             | yes             | yes
-answers to Likert and grading questions about the course        | yes*          | yes*                  | yes*                    | yes*             | yes             | yes
-answers to Likert and grading questions about contributors      | yes*          | yes*                  | yes*                    | yes, aggregated* | yes, aggregated | yes
-answers to free text questions (comments) about the course      | no            | no                    | yes                     | no               | no              | yes
-answers to free text questions (comments) about contributors    | no            | yes, about themselves | yes**                     | no               | no              | yes
+Results                                                         | standard user | contributor              | responsible contributor | *export*         | *full export*   | staff
+----------------------------------------------------------------|---------------|--------------------------|-------------------------|------------------|-----------------|------
+#participants, #voters                                          | yes           | yes                      | yes                     | yes              | yes             | yes
+total grades                                                    | yes*          | yes*                     | yes*                    | yes*             | yes             | yes
+answers to Likert and grading questions about the course        | yes*          | yes*                     | yes*                    | yes*             | yes             | yes
+answers to Likert and grading questions about contributors      | yes*          | yes*                     | yes*                    | yes, aggregated* | yes, aggregated | yes
+answers to free text questions (comments) about the course      | no            | yes***                   | yes                     | no               | no              | yes
+answers to free text questions (comments) about contributors    | no            | yes, about themselves*** | yes**                   | no               | no              | yes
 
 \*) These results are only accessible if **both** of the following are true:
 
@@ -30,6 +30,7 @@ answers to free text questions (comments) about contributors    | no            
 The variables can be defined in the settings.
 
 \**) Comments can be marked as private during the review process. Such comments can only be seen by the person about whom the comment was written (and by staff users). The responsible person and delegates can not see them.
+\***) Contributors can always see the comments about themselves. Editors can define for each contributor whether they can additionally see the comments about the course or even about all other contributors (not including private comments).
 
 
 Users can only access the results page if they can see at least a part of the results. Otherwise the results are not linked at the semester's result overview page.
