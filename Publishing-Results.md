@@ -30,6 +30,7 @@ answers to free text questions (comments) about contributors    | no            
 The variables can be defined in the settings.
 
 \**) Comments can be marked as private during the review process. Such comments can only be seen by the person about whom the comment was written (and by staff users). The responsible person and delegates can not see them.
+
 \***) Contributors can always see the comments about themselves. Editors can define for each contributor whether they can additionally see the comments about the course or even about all other contributors (not including private comments).
 
 
