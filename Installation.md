@@ -140,7 +140,7 @@ Productive Environment: Cron Configuration
 
 EvaP has components which need to react to timed events. This behavior is implemented by running two cronjobs, which in turn trigger a management command. One should be run hourly and the other one daily.
 
-For example you could use a /etc/cron.hourly/evap like
+For example you could use a /etc/cron.daily/evap like
 
     #!/bin/sh
 
@@ -148,7 +148,7 @@ For example you could use a /etc/cron.hourly/evap like
     /usr/bin/python manage.py send_reminders
     popd
 
-And a /etc/cron.daily/evap like
+And a /etc/cron.hourly/evap like
 
     #!/bin/sh
 
