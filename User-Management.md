@@ -16,7 +16,7 @@ See [[Archiving]].
 
 ### In case of user account duplicates
 
-Use the merge_users command.
+Use the `Merge Users` functionality available from the user index page.
 
 
 ### How does the authentication work for internal users?
@@ -26,11 +26,11 @@ It uses Kerberos via the django-auth-kerberos backend for django. Kerberos setti
 
 ### How does the authentication work for external users?
 
-External users need to enter their email address, whereafter EvaP sends them a randomly generated _login key_, if an account with that email address exists. This login key (which is unique, therefore it alone is enough to identify the user) can be used to log oneself in.
+External users get a login URL with each email they receive, which allows them to log in once. If they need to log in without having received an email, they can request a login URL by entering their email address on the front page.
 
-Login keys expire after a certain number of days (configurable in the settings).
+If not used, the URL expires after a certain number of days (configurable in the settings).
 
 
 ### How are staff rights assigned?
 
-Currently that is only possible via the django admin pages (/admin), to which every staff member has access.
+That is possible via the user edit form and the django admin pages (/admin), to which every staff member has access.
