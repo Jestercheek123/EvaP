@@ -20,5 +20,5 @@
   1. [[Evaluation States]]
   1. [[Calculation of Results]]
   1. [[Publishing Results]]
-1. [[Testing]]
+1. [[Testing Ideas]]
 1. [[Feature Ideas]]
