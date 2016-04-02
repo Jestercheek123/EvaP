@@ -1,8 +1,4 @@
-We want to make sure that EvaP behaves the way we intended and *only* this way. Bad things must not happen. This is why we need an acceptable test coverage.
-
-[At the moment](https://github.com/fsr-itse/EvaP/commit/5fb89162e5419cfde0378e3c8f180fca1687b672) we have a couple of test cases in ``evap.staff`` for the administration of courses. However, there are still some main aspects which should be put under the umbrella of an automated test.
-
-The following list is by no means complete but should serve as a starting point for testing ideas. Wherever possible, a wiki-page or issue should be referenced for further details. Additions welcome.
+This is a list of ideas what aspects of EvaP would be nice to have tests for.
 
 *Note: The [[Terminology]] is used here.*
 
@@ -31,11 +27,6 @@ The following list is by no means complete but should serve as a starting point 
 * A staff member can [[create a new questionnaire|Use Case: Create Questionnaire]].
 * A staff member can change an existing questionnaire (e.g. rename, alter description, add/delete questions, set/unset as person questionnaire)
 
-## User management
-* A new user can be created,
- * either via the GUI or
- * via the management command (see related issue [#289](https://github.com/fsr-itse/EvaP/issues/289)).
-* User accounts can be merged via the management command.
 
 ### Users and their Rights
 EvaP has different [[Users and their Rights]]. Make sure that they can do/see all the things they are allowed to. Make sure that they cannot do anything that they should not be able to do (e.g. a non-staff member creating new user accounts, a non-participant of a course voting for a course, a non-staff member being able to access administration web pages and so on).
@@ -45,7 +36,7 @@ Special attention should be paid to situations where a user can have multiple ro
 ## [[Emails]]
 At several occasions, emails are sent out to notify users of the system about important events:
 
-* A person resonsible and its delegates must be notified when one or more of their courses become ``pending for lecturer approval``.
+* A person responsible and its delegates must be notified when one or more of their courses become ``pending for lecturer approval``.
 * A participant must be notified if he or she has not performed yet the evaluation for a course whose evaluation phase is about to expire.
 * All contributors and participants of a course must be notified when the evaluation results are ``published``.
 * A login key email must be sent to an external user upon a login key generation request. For obvious reasons, the email must contain the login key.
