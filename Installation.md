@@ -145,7 +145,7 @@ For example you could use a /etc/cron.daily/evap like
     #!/bin/sh
 
     pushd  /opt/evap
-    /usr/bin/python manage.py send_reminders
+    sudo -H -u evap /usr/bin/python manage.py send_reminders
     popd
 
 And a /etc/cron.hourly/evap like
@@ -153,5 +153,5 @@ And a /etc/cron.hourly/evap like
     #!/bin/sh
 
     pushd  /opt/evap
-    /usr/bin/python manage.py update_course_states
+    sudo -H -u evap /usr/bin/python manage.py update_course_states
     popd
