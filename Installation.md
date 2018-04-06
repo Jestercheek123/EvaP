@@ -44,8 +44,6 @@ Dependencies
 
 EvaP is written in Python using the Django framework and you need at least Python 3.4 to run it. Apart from Python and Django there are some other dependencies that are listed in the file ``requirements.txt``. Use [pip](http://www.pip-installer.org/en/latest/installing.html) to install these with the following command: ``pip install -r requirements.txt``.
 
-*For Windows users:* As ``lxml`` has native code and compiling it with your installed compiler usually fails, you need to install a precompiled package from [lfd.uci.edu](http://www.lfd.uci.edu/~gohlke/pythonlibs/).
-
 *For Windows users:* For the compilation of translation files gettext is used. This can be downloaded as a precompiled package from [the GnuWin project](http://sourceforge.net/projects/gnuwin32/files/gettext/).
 
 
