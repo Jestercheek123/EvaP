@@ -7,29 +7,31 @@ An alternative would have been to determine the questionnaires for a course stri
 ### Questionnaire types
 
 There are two questionnaire types:
-* Course questionnaires refer to a course in general, e.g. teaching materials and contents. 
+* General questionnaires refer to a course in general, e.g. teaching materials and contents. They can either be placed above or below the contributor questionnaires. 
 * Contributor questionnaires refer to a contributor, e.g. a lecturer or teaching assistant.
 
 Contributor questionnaires cannot be assigned to courses and vice versa.
 
 Each questionnaire has a title and one or more questions.
 
-Each course can have multiple course questionnaires assigned and to each contributor of a course, a different set of contributor questionnaires can be assigned (see [[Assignment | Questionnaires: Assignment]])
+Each course can have multiple general questionnaires assigned and to each contributor of a course, a different set of contributor questionnaires can be assigned (see [[Assignment | Questionnaires: Assignment]])
 
 
 ### Question types
 
-There are three question types:
+There are multiple question types:
 * Likert questions measure agreement/disagreement on a scale from 1 (complete agreement) to 5 (complete disagreement)
 * Grade questions are similar to likert questions but use school grades from 1 (best) to 5 (worst) instead of agreement levels
-* Comment questions can be answered in a text field. These comments are reviewed by staff users before publishing.
+* Yes/no questions have "yes" and "no" as possible answer options. Either option can be defined to be the positive value depending on the question.
+* Bipolar questions have two poles (e.g., "too small"/"too large") each with three increments, placed on both sides of an "ideal" value, so these questions have 7 possible answers.
+* Text questions can be answered in a text field. These text answers are reviewed by staff users before publishing.
 
-For likert and grade questions there is also the option to select a "no answer" field when evaluating. This might lead students to spend less thoughts on their answers, but was considered necessary nonetheless, because TODO.
+For all non-text questions there is also the option to select a "no answer" field when evaluating. This might lead students to spend less thoughts on their answers, but was considered necessary nonetheless, because not everyone might be able to answer every question.
 
 
 ### Questionnaire attributes
 
-* Attributes that are shown to lecturers and staff users to help with [[questionnaire assignment | Questionnaires: Assignment]]:
+* Attributes that are shown to lecturers and managers to help with [[questionnaire assignment | Questionnaires: Assignment]]:
   * Name: A short name describing the main use of the questionnaire, e.g. "Lecture - teaching materials"
   * Description: A tooltip that is shown during assignment to provide a more detailed description of the questionnaire's contents.
 * Attributes that are visible to students:
@@ -44,4 +46,4 @@ For likert and grade questions there is also the option to select a "no answer" 
 ### Questionnaire management
 
  * Questionnaires can be deleted and edited only if they are not used for any course.
- * To change existing questionnaires for use in a new evaluation, staff users can copy the existing one and then modify the copy.
+ * To change existing questionnaires for use in a new evaluation, managers can copy the existing one and then modify the copy.
