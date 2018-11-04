@@ -8,6 +8,6 @@ EvaP was developed at the Hasso Plattner Institute (HPI) in Potsdam, Germany, wh
 
 ### About this Wiki
 
-As completely as possible this Wiki describes the evaluation process itself, the functionality of the evaluation platform and reasons for design decisions. It contains all important information for the administrating student representatives and for everyone who is interested in taking part in the platform's development.
+As completely as possible this Wiki describes the evaluation process itself, the functionality of the evaluation platform and reasons for design decisions. It contains all important information for the administrating evaluation team and for everyone who is interested in taking part in the platform's development.
 
 This is not a user manual, but it provides some background knowledge about the concepts used within the project.
