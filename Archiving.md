@@ -1,7 +1,7 @@
 ### General
 On the results pages, voters and participant counts of each course are displayed. These counts are computed on the fly and as such dependent on user accounts, if a voter/participant gets deleted, these counts would also change. To prevent this, it is usually not possible to delete participants of courses through the UI. 
 
-However, an archiving functionality is implemented that decouples these counts from user accounts. This functionality is available in the staff's semester view site. When all courses of a participant have been archived, deleting the participant is possible again.
+However, an archiving functionality is implemented that decouples these counts from user accounts ("Archive participations"). This functionality is available in the staff's semester view site. When all courses of a participant have been archived, deleting the participant is possible again.
 
 It is not possible to archive individual courses, only whole semesters. Semesters can only be archived if all of their courses are in the states "new" or "published".
 
@@ -17,3 +17,10 @@ Contributors cannot be deleted. Deleting them would also delete all results asso
 For participants: In theory, as soon as they don't have a university account anymore. If that is technically not possible, one probably has to resort to deleting them after a certain number of semesters.
 
 For contributors: As explained, it is not possible to delete contributors without altering results. When a staff member is required to import a new contributor that has the same name as an existing one, one can give the existing contributor a new username, e.g. by appending their ID to their previous username, as that username is not visible to users except in some staff pages. The importer will warn if a new contributor with the same username but different email address is about to be added.
+
+
+### Grade document deletion
+On the semester index page, managers can delete all grade documents for a specific semester as part of the archiving process.
+
+### Result archiving
+The results of a semester can be archived from its index page. The results are then removed from the student and results pages. They are still accessible via the staff semester page and contributors can access courses they contributed to from their index page.
