@@ -37,6 +37,6 @@ This is handled in [evaluation/auth.py](https://github.com/fsr-itse/EvaP/blob/ma
 
 For development, where usually no Kerberos backend is available, the [test_data.json](https://github.com/fsr-itse/EvaP/blob/master/evap/evaluation/fixtures/test_data.json) fixture includes lots of users with the password `evap`. Currently there is no way to set a user's password via the UI. 
 
-### How are staff and grade publisher rights assigned?
+### How are manager, reviewer and grade publisher rights assigned?
 
-Thas is possible via the user edit form and the django admin pages (/admin), to which every staff member has access.
+That is possible via the user edit form to which every manager has access.
