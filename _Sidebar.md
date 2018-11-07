@@ -6,9 +6,8 @@
 1. [[Source Code Structure]]
 1. [[Installation]]
 1. Meta
-    1. [[Domain Description]]
+    1. [[Stakeholder]]
     1. [[Requirements Engineering]]
-    1. [[Use Cases]]
 1. Management
     1. [[Users and their Rights]]
     1. [[User Management]]
