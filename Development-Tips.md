@@ -1,8 +1,10 @@
 Here are some tips, roughly ordered by usefulness:
 
+* run **`manage.py run`** to start the django development server
 * run **`manage.py test`** before opening a pull request (but it also helps while developing!)
 * run **`manage.py migrate`** whenever you pull changes with new migrations
 * run **`manage.py makemigrations`** whenever you change any models 
+* run **`manage.py reload_testdata`** to throw away the database and reload the test_data
 * use [poedit ](http://poedit.net/) to edit the translation files
 * run **`manage.py shell_plus`** to interactively test python code
    * in contrast to `shell`, this automatically imports e.g. all models.
