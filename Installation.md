@@ -11,15 +11,30 @@ You can use EvaP at ``http://localhost:8000/`` on your host (an apache instance 
 Use ``vagrant halt`` to shutdown the VM, and ``vagrant destroy`` to delete it.
 
 
-Manual installation
+Manual Installation Instructions (Linux)
 --------------------
 
 We recommend that you install the application into the directory ``/opt/evap`` according to the filesystem hierarchy standard. In the remaining steps, we will assume that this is your installation directory.
 
-* Clone the repository or copy the files into that directory. The installation should be correct if the settings file has the path ``/opt/evap/evap/settings.py``.
-* Follow the steps in the [script used to create the Vagrant VM](https://github.com/fsr-itse/EvaP/blob/master/deployment/provision_vagrant_vm.sh).
-* Make sure that all files and directories are readable by the Apache web server. Additionally please make sure that the directory ``/opt/evap/evap/upload`` is writable by the web server.
+* After cloning the repository, follow the steps in the [script used to create the Vagrant VM](https://github.com/fsr-itse/EvaP/blob/master/deployment/provision_vagrant_vm.sh).
+* The apache server is not needed for development. When using it, make sure that all files and directories are readable by the Apache web server. Additionally please make sure that the directory ``/opt/evap/evap/upload`` is writable by the web server.
 * If you do not want to use the test data, you can use ``python manage.py createsuperuser`` to create a user to be able to log in.
+
+
+Manual Installation Instructions (Windows)
+--------
+Note that you still need to setup the Vagrant VM, since redis is not available for Windows. Alternatively, you can change the settings to use a different (and most likely slower) caching backend.
+- `pip install --user rcssmin==1.0.6 --install-option="--without-c-extensions"`
+- `pip install --user rjsmin==1.0.12 --install-option="--without-c-extensions"`
+- `pip install --user -r .\requirements-dev.txt`
+- download sassc ([direct link](https://github.com/sass/sassc/releases/download/3.4.7/sassc.zip)), rename the .exe to `sass.exe`, put it somewhere on the PATH (e.g. into `C:\Windows\System32`)
+- [download postgres](https://www.openscg.com/bigsql/postgresql/installers.jsp/), install it. enter `evap` as password
+- run `"C:\PostgreSQL\pg10\bin\createuser.exe" -U postgres --createdb evap`
+    - enter `evap` as password
+- run this: `"C:\PostgreSQL\pg10\bin\psql.exe" -U postgres -d postgres -c "ALTER USER evap WITH PASSWORD 'evap';"`
+    - enter `evap` as password
+- run `vagrant ssh`, `sudo vim /etc/redis/redis.conf` and add this line: bind 0.0.0.0
+- run `python manage.py reload_testdata`
 
 
 Productive Environment: Settings
