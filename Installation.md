@@ -80,20 +80,20 @@ MIDDLEWARE_CLASSES += ('django_auth_kerberos.backends.KrbBackend',)
 Productive Environment: Cron Configuration
 ------------------------------------------
 
-EvaP has components which need to react to timed events. This behavior is implemented by running two cronjobs, which in turn trigger a management command. One should be run hourly and the other one daily.
+EvaP has components which need to react to timed events. This behavior is implemented by running two cronjobs, which in turn trigger a management command.
 
-For example you could use a /etc/cron.daily/evap like
+This should run daily:
 
     #!/bin/sh
 
-    pushd  /opt/evap
+    pushd  <path_to_repository>
     sudo -H -u evap /usr/bin/python manage.py send_reminders
     popd
 
-And a /etc/cron.hourly/evap like
+This should run every five minutes:
 
     #!/bin/sh
 
-    pushd  /opt/evap
+    pushd  <path_to_repository>
     sudo -H -u evap /usr/bin/python manage.py update_course_states
     popd
