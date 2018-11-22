@@ -12,7 +12,7 @@
 - Students who are participating in a course are called **participants**/*Teilnehmende* of that course.
 - Students who took part in the evaluation of a course are called **voters**/*Abstimmende*.
 - Participants who did not yet take part in the evaluation of a course are called **due participants**/*ausstehende Teilnehmende*.
-- Users without Kerberos credentials need a **login key**/*Anmeldeschlüssel* to log in.
+- Users without Kerberos credentials need a **login key**/*Anmeldeschlüssel* to log in. Those users are called **external users**/*externe Benutzer*.
 
 ### Semester
 - A **semester**/*Semester* describes a period in which courses can take place. It only has a name but no specified dates.
