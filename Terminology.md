@@ -5,7 +5,7 @@
 - A user supporting the managers during the text answer review process is called **reviewer**/*Reviewer*. These users can access all detailed results and text answers, but cannot edit anything else.
 - All users who are added to have teaching roles in a course (lecturers, tutors, etc.) are called **contributors**/*Mitwirkende*.
 - At every time one of the contributors of a course is the **person responsible for the course**/*Lehrveranstaltungs-Verantwortlicher*. This role is assigned by the student representatives.
-- Every contributor can get assigned **edit rights**/*Bearbeitungsrechte* for a course by any person who already has these edit rights for this very course and thereby becomes an **editor**/*Bearbeiter*. The responsible person always has edit rights.
+- Every contributor can get assigned **edit rights**/*Bearbeitungsrechte* for a course by any person who already has these edit rights for this very course and thereby becomes an **editor**/*Bearbeiter*. The responsible person always has edit rights. Editors can add and remove contributors to/from the course, assign questionnaires, and change the course information.
 - **Delegates**/*Stellvertreter* are users who are assigned to other users. A delegate has the combined edit rights for courses of all users he or she is **representing**.
 - **CC-Users**/*CC-Benutzer* are users who are receiving a copy of all emails that are sent to their **CC'ing users**/*in CC setzende Benutzer*. 
 - A **student**/*Student* is a person participating in a course.
