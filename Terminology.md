@@ -2,7 +2,7 @@
 
 - Any person using the system at any time is called a **user**/*Benutzer*.
 - Responsible for the evaluation system are the users who are a **manager**/*Manager*. They work as administrators of the system and have full edit rights for users, courses, questionnaires, ...
-- A user supporting the managers during the text answer review process is called **reviewer**/*Reviewer*. These users can access all detailed results and text answers, but cannot edit anything else.
+- A user supporting the managers during the text answer review process is called **reviewer**/*Reviewer*. These users can access all detailed results and text answers, but cannot edit anything else and cannot access e.g. user profiles. 
 - All users who are added to have teaching roles in a course (lecturers, tutors, etc.) are called **contributors**/*Mitwirkende*.
 - At every time one of the contributors of a course is the **person responsible for the course**/*Lehrveranstaltungs-Verantwortlicher*. This role is assigned by the student representatives.
 - Every contributor can get assigned **edit rights**/*Bearbeitungsrechte* for a course by any person who already has these edit rights for this very course and thereby becomes an **editor**/*Bearbeiter*. The responsible person always has edit rights. Editors can add and remove contributors to/from the course, assign questionnaires, and change the course information.
