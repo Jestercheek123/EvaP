@@ -30,7 +30,7 @@
 	- An **evaluation period**/*Evaluierungszeitraum* in which the course is available for evaluation
 	- Questionnaires that are assigned to the course.
 	- The current **state**/*Zustand* of the course (see [[Evaluation States]])
-- A special type of course are the **single results**/*Einzelergebnisse*. They are never open for evaluation, have no participants, and a single likert question, to which the answer counts are entered manually by the managers.
+- A special type of course are the **single results**/*Einzelergebnisse*. They are never open for evaluation, have no participants, and a single grading question, to which the answer counts are entered manually by the managers.
 
 ### Questionnaires
 
