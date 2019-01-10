@@ -1,4 +1,4 @@
-Installation
+Development Installation
 ============
 
 Vagrant
@@ -37,7 +37,9 @@ Note that you still need to setup the Vagrant VM, since redis is not available f
 - run `python manage.py reload_testdata`
 
 
-Productive Environment: Settings
+Productive Environment
+============
+Settings
 --------
 
 The configuration of the application is done by creating a ``localsettings.py`` in the ``evap`` folder and overwriting the defaults from ``settings.py`` there. The defaults should be OK for most development purposes. For a production environment you should change the following settings:
@@ -49,24 +51,57 @@ The configuration of the application is done by creating a ``localsettings.py`` 
 - Finally, set ``DEBUG`` to ``False``.
 
 
-Productive Environment: Apache 2 Configuration
+Virtual Environment
+--------
+To be able to use a custom python version independent from the versions available for your operating system by default, you should create a virtual environment and use it for running the django application:
+
+1. Add the "deadsnakes" repository to your package manager:  
+`sudo add-apt-repository ppa:deadsnakes/ppa`
+2. Update the list of available packages:  
+`sudo apt-get update`
+3. Install the python version of choice (here: 3.7) and the dev-packages for python and Apache:  
+`sudo apt-get install python3.7 python3.7-dev apache2-dev`
+
+Do the following as the user who is running the application (e.g., "evap"):
+
+4. Change to the application's location:  
+`cd /opt/evap`
+5. Create a virtual environment called "env":  
+`python3.7 -m venv env`
+6. In this virtual environment install mod_wsgi:  
+`env/bin/pip install mod_wsgi`
+
+Apache 2 Configuration
 ----------------------------------------------
 
 See [apache.template.conf](https://github.com/fsr-itse/EvaP/blob/master/deployment/apache.template.conf) for an example apache config.
+You should change the WSGI settings from the example like so:
+```
+WSGIScriptAlias / /opt/evap/evap/wsgi.py
+WSGIDaemonProcess evap processes=2 threads=15 display-name=%{GROUP} user=evap python-home=/opt/evap/env
+WSGIProcessGroup evap
+```
+
+Also, change the file `mods-available/wsgi.load` in the Apache directory to use the version from the virtual environment:  
+`LoadModule wsgi_module /opt/evap/env/lib/python3.7/site-packages/mod_wsgi/server/mod_wsgi-py37.cpython-37m-x86_64-linux-gnu.so`
+
+For further details about the Apache and WSGI configuration see
+- https://pypi.org/project/mod_wsgi/
+- https://modwsgi.readthedocs.io/en/develop/user-guides/virtual-environments.html#daemon-mode-single-application
 
 
-Productive Environment: Updating to a new version
+Updating to a new version
 ----------------------------------------------
 
-See [update_production.sh](https://github.com/fsr-itse/EvaP/blob/master/deployment/update_production.sh).
+Run [update_production.sh](https://github.com/fsr-itse/EvaP/blob/master/deployment/update_production.sh) as a sudoer.
 
 
-Productive Environment: Kerberos Authentication
+Kerberos Authentication
 -----------------------------------------------
 
 To use Kerberos as an authentication backend, do the following:
 
-- run ``pip install django_auth_kerberos``
+- run ``env/bin/pip install django-auth-kerberos``
 
 - copy the following to your ``localsettings.py`` and edit ``KRB5_REALM`` and ``KRB5_SERVICE`` according to your setup:
 
@@ -77,7 +112,7 @@ INSTALLED_APPS += ('django_auth_kerberos',)
 MIDDLEWARE_CLASSES += ('django_auth_kerberos.backends.KrbBackend',)
 ```
 
-Productive Environment: Cron Configuration
+Cron Configuration
 ------------------------------------------
 
 EvaP has components which need to react to timed events. This behavior is implemented by running two cronjobs, which in turn trigger a management command.
