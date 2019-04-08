@@ -50,13 +50,14 @@ class QuestionnaireResult:
 
 
 class RatingResult:
-    def __init__(self, question, answer_counters):
+    def __init__(self, question, answer_counters, is_published=True):
         assert question.is_rating_question
         self.question = question
         counts = OrderedDict((value, 0) for value in self.choices.values if value != NO_ANSWER)
         for answer_counter in answer_counters:
             counts[answer_counter.answer] = answer_counter.count
         self.counts = tuple(counts.values())
+        self.is_published = is_published
 
     @property
     def choices(self):
@@ -90,10 +91,6 @@ class RatingResult:
     @property
     def has_answers(self):
         return self.is_published and any(count != 0 for count in self.counts)
-
-    @property
-    def is_published(self):
-        return self.counts is not None
 
 
 class TextResult:
@@ -140,8 +137,11 @@ def _collect_results_impl(evaluation):
             results = []
             for question in questionnaire.questions.all():
                 if question.is_rating_question:
-                    answer_counters = RatingAnswerCounter.objects.filter(contribution=contribution, question=question) if evaluation.can_publish_rating_results else ()
-                    results.append(RatingResult(question, answer_counters))
+                    if evaluation.can_publish_rating_results:
+                        answer_counters = RatingAnswerCounter.objects.filter(contribution=contribution, question=question)
+                        results.append(RatingResult(question, answer_counters))
+                    else:
+                        results.append(RatingResult(question, answer_counters=(), is_published=False))
                 elif question.is_text_question and evaluation.can_publish_text_results:
                     answers = TextAnswer.objects.filter(contribution=contribution, question=question, state__in=[TextAnswer.PRIVATE, TextAnswer.PUBLISHED])
                     results.append(TextResult(question=question, answers=answers, answers_visible_to=textanswers_visible_to(contribution)))
