@@ -4,6 +4,7 @@
 1. [[Terminology]]
 1. [[Development Tips]]
 1. [[Source Code Structure]]
+1. [[Frontend]]
 1. [[Installation]]
 1. Management
     1. [[Users and their Rights]]

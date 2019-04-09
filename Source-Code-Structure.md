@@ -21,6 +21,9 @@ provides views relevant for students (mainly voting)
 `rewards`
 provides views relevant for the rewards functionality
 
+`static`
+contains third-party vendors like Bootstrap and Fontawesome and our custom styling
+
 Data Import
 -----------
 
